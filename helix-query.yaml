@@ -2,7 +2,7 @@ indices:
   blog:
     include:
       - /post/**
-    target: /post-index
+    target: /post-index.json
     properties:
       author:
         select: head > meta[name="author"]
