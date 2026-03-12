@@ -1,8 +1,8 @@
 indices:
-  blog:
+  default:
     include:
       - /post/**
-    target: /post-index.json
+    target: /query-index
     properties:
       author:
         select: head > meta[name="author"]
