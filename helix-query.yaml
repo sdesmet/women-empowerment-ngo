@@ -1,5 +1,3 @@
-version: 1
-
 indices:
   blog:
     include:
