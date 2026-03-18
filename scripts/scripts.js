@@ -93,7 +93,6 @@ function a11yLinks(main) {
       const icon = link.querySelector('span.icon');
       label = icon ? icon.classList[1]?.split('-')[1] : label;
     }
-    link.setAttribute('aria-label', label);
   });
 }
 
@@ -133,7 +132,6 @@ function decorateButtons(main) {
       a.classList.add('secondary');
       em.replaceWith(a);
     }
-    link.setAttribute('aria-label', label);
   });
 }
 
@@ -148,7 +146,7 @@ export function decorateMain(main) {
   decorateSections(main);
   decorateBlocks(main);
   decorateButtons(main);
-// add aria-label to links
+  // add aria-label to links
   a11yLinks(main);
 }
 
